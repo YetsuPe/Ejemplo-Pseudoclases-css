@@ -1,0 +1,155 @@
+/**********  RESET ********/
+a{
+	text-decoration: none;
+}
+/***********Responsive text*****************/
+html{
+	font-size: 75%;
+}
+/************* HEADER *******************/
+header img{
+	width: 100%;
+}
+header > nav{
+	width: 100%;
+	background: #7d7e7d; /* Old browsers */
+	background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+	font-size: 0;
+	padding: 1rem 0;
+}
+header nav a{
+	display: inline-block;
+	width: 33.3%;
+	font-size: 1rem;
+	text-align: center;
+	color: white;
+}
+/**************** Tìtulo de la página ***********************/
+h1{
+	text-align: center;
+	border-bottom: 1rem double #cccccc;
+	font-family: 2rem;
+}
+/***********fondo principal***************/
+.bck-dark{
+	background: #7d7e7d;
+}
+/************** CONTENEDORES***********/
+   /**** main  *****/
+.content-main{
+	padding: 1rem;
+}
+/******************** PLATOS *************/
+article{
+	background-color: #cccccc;
+	border-radius: .5rem;
+	padding-bottom: .2rem;
+}
+article h2{
+	text-align: center;
+	font-family: 'Damion', cursive;
+	font-size: 1.5rem
+}
+article img{
+	width: 100%;
+}
+article ul{
+	list-style-type: square;
+}
+article .button{
+	display: block;
+	width: 40%;
+	margin: 1rem auto;
+	text-align: center;
+}
+/************ Boton comprar **************/
+.button{
+	background: #7d7e7d; /* Old browsers */
+	background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+	color: #cccccc;
+	text-decoration: none;
+	padding: 1em 2em;
+	border-radius: .2em;
+	position: relative;
+	-o-transition:all ease 2s;
+	-webkit-transition:all ease 2s;
+	-ms-transition:all ease 2s;
+	-moz-transition:all ease 2s;
+	transition:all ease 2s;
+	
+}
+.button:hover{
+	background-color: red;
+	/*-webkit-transform:rotate(5deg);*/
+	/*transform:rotate(5deg);*/
+	animation:move 1s infinite;
+}
+@keyframes move {
+	0%{
+		transform:rotate(-90deg);
+		left: -15rem;
+	}
+	100%{
+		transform:rotate(90deg);
+		right: 15rem;
+	}
+}
+
+/**************** RESPONSIVE ********/
+@media (min-width:480px ){
+	.content-main:before,.content-main:after{
+		content: "";
+		display: table;
+	}
+	.content-main:after{
+		clear: both;
+	}
+	article{
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+	}
+	article:nth-of-type(3){
+		margin-top:2%;
+	}
+}
+
+.telefono{
+	width: 95%;
+	margin: 20rem auto;
+	background-color: yellow;
+	border-radius: .5rem;
+	transform: rotate(10deg);
+}
+
+
+
+
+
+
+/*
+.orange{
+	color:orange
+}
+*/
+/***********  Estilos de la receta ****
+.receta li:first-child{
+	color:#CD5B1F;
+}
+.receta li:last-child{
+	color:yellow
+}
+.receta li:nth-child(3){
+	color:green
+}
+*/
